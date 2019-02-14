@@ -1,6 +1,4 @@
-const photoService = require('../../service/photo')
+const photoService = require('../../services/photo');
 module.exports = {
-  newPost: (req, res) => {
-    return photoService.getRandomPhoto(req, res)
-  }
-}
+  newPost: (req, res) => photoService.getRandomPhoto(req, res),
+};
